@@ -1,7 +1,5 @@
 package generation
 
-import generation.*
-
 enum class ImageGenerationModel(
     val modelNames:Map<ApiProvider,String>) {
     NanoBananaEdit(

@@ -97,7 +97,7 @@ sealed class ApiProvider() {
         AiUsageScope.scope.launch {
             val uploadedImages = images?.map{image->
                 AiUsageScope.scope.async {
-                return@async if(uploadFun!=null && image!=null){
+                return@async if(uploadFun!=null){
                     uploadFun!!(image)!!
                 }else{
                     null

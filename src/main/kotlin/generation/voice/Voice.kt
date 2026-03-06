@@ -26,19 +26,6 @@ data class Voice(
                 }
                 return dataFile
             }
-            /*VoiceGenerationModel.FishSpeech2 -> {
-                val dataFile = File("data/voices/FishSpeech2/$name.mp3")
-                if(!dataFile.exists()){
-                    dataFile.parentFile.mkdirs()
-                    val inputStream = javaClass.classLoader.getResourceAsStream("voices/FishSpeech2/$name.mp3")
-                    val out = FileOutputStream(dataFile)
-                    if (inputStream != null) {
-                        out.write(inputStream.readBytes())
-                    }
-                }
-                return dataFile
-            }*/
-            //VoiceGenerationModel.Gemini2_5Pro -> throw Exception("not implemented 87986023495")
         }
     }
     fun getResourceFile(path: String): File {
