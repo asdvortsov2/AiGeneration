@@ -2,6 +2,9 @@ import java.io.File
 import java.util.HashMap
 import kotlin.math.max
 
+
+
+
 fun File.getMimeType(): String {
     return when (extension.lowercase()) {
         "jpg", "jpeg" -> "image/jpeg"
